@@ -1,22 +1,20 @@
-.logo {
-  position: absolute;
-  left: 20px;
+.logo img{
+  height: 60px;
+  width: 440px;
 }
 header{
   background-color: white;
-  height: 70px;
+  height: 100px;
   border-bottom: 2px solid grey;
-  padding: 10px;
-}
-.logo img {
-  height: 50px;
-  width: 300px;
+  display:flex;
+  justify-content: space-between; /*untuk membuat kode terp*/
+  padding: 10px 100px;
 }
 .gitudeh {
-  display: flex;
-  justify-content: right;
+  display: flex; 
   gap: 30px;
   list-style: none;
+  padding-right: 10px;
 }
 .gitudeh li a {
   color: #555; 
