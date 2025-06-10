@@ -1,30 +1,168 @@
-.logo img{
-  height: 60px;
-  width: 440px;
-}
-header{
+header {
+  padding: 0px 0px 70px 0px; 
   background-color: white;
-  height: 100px;
-  border-bottom: 2px solid grey;
-  display:flex;
-  justify-content: space-between; /*untuk membuat kode terp*/
-  padding: 10px 100px;
+  display: flex;
+  flex-direction: column;
 }
-.gitudeh {
-  display: flex; 
+
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+header h1 {
+  font-size: 36px;
+  text-align: center;
+  border-bottom: none;
+  font-family: 'Verdana', sans-serif;
+  margin-bottom: 4px;
+}
+
+header p {
+  font-size: 16px;
+  text-align: center;
+  border-bottom: none;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  margin: 0px
+}
+
+.atas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: white;
+}
+
+.bawah {
+  border-top: 1px solid #b7b7b7;
+  margin: 0px;
+  padding: 40px 0px 0px 0px;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+  padding-bottom: 5px; 
+}
+
+.menu {
+  display: flex;
   gap: 30px;
   list-style: none;
-  padding-right: 10px;
+  margin: 0;
+  padding: 0;
+  margin-left: auto; 
 }
-.gitudeh li a {
-  color: #555; 
+
+.menu li a {
+  color: #555;
   font-weight: 500;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   text-decoration: none;
   transition: color 0.3s ease;
 }
-.gitudeh li a:hover {
-  color: #440066; 
-  font-weight: bold;
+
+.menu li a:hover {
+  color: #440066;
+  font-weight: bold;
+}
+
+.beranda h2 {
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Verdana', sans-serif;
+  margin: 0px;
+  padding-bottom: 7px;
+}
+
+.beranda p{
+  font-size: 16px;
+  text-align: center;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  margin: 0px;
+}
+
+.beranda {
+  background-color: #f5fcff; /* warna background */
+  padding: 20px;
+}
+
+.values {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 50px 20px;
+  background-color: #f5fcff; /* warna background */
+}
+
+.value {
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+  max-width: 350px;
+  flex: 1 1 300px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.value:hover {
+  transform: translateY(-5px);
+}
+
+.value-kotak {
+  display: flex;
+  align-items: center;
+  gap: 12px; 
+  margin-bottom: 12px;
+}
+
+.icon {
+  background-color: #1a2edb;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  display: inline-block;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.values h3 {
+  margin-top: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #002d5d;
+  font-family: "Audiowide", sans-serif;
+}
+
+.values p {
+  color: #1a2d4e;
+  line-height: 1.6;
+  font-family: Poppins, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.produk-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 50px 20px;
+}
+
+.produk-card {
+  background-color: rgba(255, 246, 212, 0.796);
+  border-radius: 25px;
+  padding: 10px;
+  max-width: 350px;
+}
+
+.produk h2 {
+  text-align: center;
 }
