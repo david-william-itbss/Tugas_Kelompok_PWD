@@ -27,6 +27,11 @@ header p {
 }
 
 .atas {
+  position: fixed;
+  top: 0;
+  left: 15px;
+  right: 20px;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,7 +41,7 @@ header p {
 
 .bawah {
   border-top: 1px solid #b7b7b7;
-  margin: 0px;
+  margin: 90px 0px 0px 0px;
   padding: 40px 0px 0px 0px;
 }
 
@@ -135,7 +140,7 @@ header p {
   margin-top: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #002d5d;
-  font-family: "Audiowide", sans-serif;
+  font-family: sans-serif;
 }
 
 .values p {
@@ -148,6 +153,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.produk-section {
+  background-color: #f8fff4;
+}
+
 .produk-grid {
   display: flex;
   gap: 30px;
@@ -157,12 +166,164 @@ html {
 }
 
 .produk-card {
-  background-color: rgba(255, 246, 212, 0.796);
+  background-color: rgba(255, 250, 231, 0.903);
   border-radius: 25px;
   padding: 10px;
   max-width: 350px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.produk h2 {
+.produk-card h3 {
+  font-size: 20px;
+}
+
+.regular{
+  font-size: 18px;
+  color: #1f68ee;
+}
+
+.premium{
+  font-size: 18px;
+  color: #ec2a2a;
+}
+
+.produk-section h2 {
   text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+}
+
+.produk-1 {
+  height: 350px;
+  width: 350px;
+}
+
+.produk-2 {
+  height: 420px;
+  width: 350px;
+}
+
+.testimoni {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimoni h2 {
+  font-family: 'Verdana', sans-serif;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.testi-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.testi-card {
+  background-color: #dce8f8;
+  border-radius: 25px;
+  padding: 30px 20px;
+  max-width: 350px;
+  text-align: left;
+  position: relative;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+}
+
+.testi-header {
+  display: flex;
+  align-items: center; /* Vertikal rata tengah */
+  gap: 12px;           /* Jarak antara foto dan bintang */
+  margin-bottom: 12px; /* Jarak bawah header ke nama */
+}
+
+.testi-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+.testi-stars {
+  color: gold;
+  font-size: 20px;
+}
+
+.testi-card h3 {
+  font-family: 'Verdana', sans-serif;
+  margin: 0 0 10px;
+}
+
+.testi-card p {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.5;
+}
+
+.order-section {
+  background: #f5fbfe;
+  padding: 40px 20px;
+  border-radius: 16px;
+  max-width: 1100px;
+  margin: 40px auto;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.03);
+}
+
+.order-section h2 {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 32px;
+  background: #fff;
+  display: inline-block;
+  padding: 8px 32px;
+  border-radius: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.order-steps {
+  display: flex;
+  justify-content: center;   
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.order-step {
+  background: none;
+  flex: 1 1 160px;
+  min-width: 180px;
+  max-width: 220px;
+  text-align: center;
+  margin: 0 8px;
+}
+
+.order-number {
+  background: #b6e0fb;
+  color: #2196f3;
+  font-size: 2.2rem;
+  font-weight: bold;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 16px auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(33,150,243,0.08);
+}
+
+.order-step h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.order-step p {
+  color: #333;
+  font-size: 0.98rem;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
 }
